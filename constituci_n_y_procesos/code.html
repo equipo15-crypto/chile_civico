@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Cívica Chile</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Epilogue:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"inverse-primary": "#c0000d", "surface-container-highest": "#45302c", "on-tertiary-container": "#000511", "tertiary-fixed": "#d4e3ff", secondary: "#ffb4aa", "on-tertiary": "#00315e", "on-tertiary-fixed": "#001c3a", "surface-container-high": "#392522", outline: "#ae8883", "on-secondary-container": "#ff9f93", error: "#ffb4ab", "surface-dim": "#200f0c", "on-secondary": "#690003", "on-primary-container": "#140000", "surface-variant": "#45302c", "surface-container-low": "#291714", "tertiary-fixed-dim": "#a5c8ff", "on-background": "#fddbd6", "surface-tint": "#ffb4aa", "on-surface": "#fddbd6", background: "#200f0c", "error-container": "#93000a", "primary-container": "#e72421", surface: "#200f0c", "on-primary": "#690003", "on-error": "#690005", "on-primary-fixed-variant": "#930007", "primary-fixed": "#ffdad5", "on-tertiary-fixed-variant": "#004785", primary: "#ffb4aa", "secondary-container": "#8d1e18", "secondary-fixed-dim": "#ffb4aa", "primary-fixed-dim": "#ffb4aa", tertiary: "#a5c8ff", "secondary-fixed": "#ffdad5", "on-error-container": "#ffdad6", "on-secondary-fixed": "#410001", "tertiary-container": "#1f78d2", "on-secondary-fixed-variant": "#8a1c16", "outline-variant": "#5d3f3b", "on-primary-fixed": "#410001", "surface-container-lowest": "#1a0a08", "surface-bright": "#493431", "on-surface-variant": "#e7bdb7", "inverse-on-surface": "#402b28", "inverse-surface": "#fddbd6", "surface-container": "#2d1b18"}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}, spacing: {margin: "2rem", "space-lg": "1.5rem", "margin-mobile": "1rem", gutter: "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem"}, fontFamily: {"headline-xl-mobile": ["Manrope"], "title-md": ["Inter"], "label-lg": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Manrope"], "body-lg": ["Inter"], "body-md": ["Inter"], "label-md": ["Inter"], "display-lg": ["Manrope"], "label-sm": ["Inter"], "headline-xl": ["Manrope"], "display-lg-mobile": ["Manrope"], "headline-md": ["Manrope"], headline: ["Inter"], display: ["Inter"], body: ["Epilogue"], label: ["Epilogue"]}, fontSize: {"headline-xl-mobile": ["26px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}], "title-md": ["18px", {lineHeight: "26px", fontWeight: "600"}], "label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "body-sm": ["14px", {lineHeight: "20px", fontWeight: "400"}], "headline-sm": ["20px", {lineHeight: "28px", fontWeight: "600"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "label-md": ["12px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600"}], "display-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500"}], "headline-xl": ["36px", {lineHeight: "44px", letterSpacing: "-0.015em", fontWeight: "600"}], "display-lg-mobile": ["32px", {lineHeight: "40px", letterSpacing: "-0.015em", fontWeight: "700"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Logo Cívica Chile" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAO-pErIrTxvmDCtu3PY_DLNwJIqGht5TD-zKl_agt4A4RDv3im5OKUvGGE5tpqzP2K5cz0uOMLYNh3ALeORz9PZQR-SO0qeAQTaX_78RoG3ZrOJ9LwiTr8PYqk_qc1GHQAcupxtgWkmb7MBHFs4xsnjhTxRXamoO4KRmEEaLNN63j25VGskIuY2reBRIJ2jVOEhzpU9gwV1Dmq2REvcGCBc4nXo904F6xeJIOOuEmv"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold leading-none tracking-tight">Cívica Chile</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-tight">Constitución</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Búsqueda cívica" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Perfil ciudadano" class="w-11 h-11 flex items-center justify-center" data-path="perfil-ciudadano" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC85ruJgGnvGI9jfLWQJOUf39NUq7cfn27M3ib2IvhaJO5ns_7-9m-FzH7LCHA7OPxW6i4p_4Ee-sgKVpp9AJWNfXjyefYa83gtYgnoe9zW6-aMKRK5GkOBnzXjRcqDiCSSxwex1s3x2Gf4CsKg8EqoEVPeER-ZdxT4SYqnBewtiyECaJHQIGEg2gOix784OckOZC0kgEaPhtWuoAN7MahzeCFwnHx3v2SAmd0g1FgT"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Search & Comparative Filter Header -->
+<section class="px-gutter-mobile py-space-md bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Archivo Institucional Abierto</span>
+</div>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-md text-label-md px-2 py-0.5 rounded-full">4 Textos Clave</span>
+</div>
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md pl-10 pr-10 py-2.5 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="const-search" placeholder="Buscar conceptos (ej: quórum, recurso, subsidio)..." type="text"/>
+<button aria-label="Limpiar búsqueda" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="clear-search">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Comparative Epoch Switcher -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar pt-1 pb-0.5" id="epoch-pill-group">
+<button class="epoch-chip active px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-epoch="all">
+<span class="material-symbols-outlined text-[16px]">view_timeline</span>
+<span>Todas las Épocas</span>
+</button>
+<button class="epoch-chip px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant whitespace-nowrap hover:bg-surface-container-highest transition-all" data-epoch="1833">
+        1833 Portaliana
+      </button>
+<button class="epoch-chip px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant whitespace-nowrap hover:bg-surface-container-highest transition-all" data-epoch="1925">
+        1925 Social-Laica
+      </button>
+<button class="epoch-chip px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant whitespace-nowrap hover:bg-surface-container-highest transition-all" data-epoch="1980">
+        1980 Vigente / 2005
+      </button>
+<button class="epoch-chip px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant whitespace-nowrap hover:bg-surface-container-highest transition-all" data-epoch="reciente">
+        2019-2023 Procesos
+      </button>
+</div>
+</section>
+<!-- Interactive Comparison Stream -->
+<section class="px-gutter-mobile py-space-md flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Evolución Constitucional</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Toca para comparar pilares</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="epoch-cards-container">
+<!-- 1833 Card -->
+<article class="epoch-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer" data-card-epoch="1833">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">1833 – 1925</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">92 Años</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform transform epoch-arrow">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-2">Constitución Portaliana</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Presidencialismo fuerte, orden conservador y voto censitario. La consolidación institucional temprana de la República.</p>
+<div class="epoch-details hidden mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Rol del Estado</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Garante del orden público, religión católica exclusiva del Estado, reelección inmediata del Presidente (decenios).</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">balance</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Mecanismo de Quórum</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reformas lentas mediante dobles lecturas parlamentarias en legislaturas sucesivas.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- 1925 Card -->
+<article class="epoch-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer" data-card-epoch="1925">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">1925 – 1973</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">48 Años</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform transform epoch-arrow">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-2">Estado Social y República Laica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Separación de la Iglesia y el Estado, fin del parlamentarismo inestable e incorporación de garantías sociales y laborales.</p>
+<div class="epoch-details hidden mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">diversity_3</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Derechos Sociales Clave</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Protección del trabajo, previsión obligatoria, función social de la propiedad agraria y educación pública primaria.</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">account_tree</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Creación de Instituciones</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nace el Tribunal Calificador de Elecciones (TRICEL) y el Banco Central para garantizar probidad electoral y monetaria.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- 1980 Card -->
+<article class="epoch-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer" data-card-epoch="1980">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary font-bold">1980 – Vigente</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-primary font-semibold">Enmiendas 2005 (Lagos)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform transform epoch-arrow">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-2">Estado Subsidiario &amp; Carta Democrática</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Primacía del individuo y libertad económica. Reformada profundamente en 1989 y 2005 eliminando enclaves autoritarios.</p>
+<div class="epoch-details hidden mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">policy</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Principios Esenciales</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Libertad de asociación, iniciativa privada en salud/previsión/educación y catálogo exhaustivo de garantías en el Art. 19.</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">military_tech</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Hito 2005</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Eliminación de senadores vitalicios y designados; subordinación plena de las Fuerzas Armadas al Presidente de la República.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- 2019-2023 Card -->
+<article class="epoch-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer" data-card-epoch="reciente">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">2019 – 2023</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">Plebiscitos</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform transform epoch-arrow">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-2">Ciclos Constituyentes Recientes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dos propuestas redactadas por órganos electos (Convención Constitucional y Consejo Constitucional), ambas rechazadas por la ciudadanía.</p>
+<div class="epoch-details hidden mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">how_to_vote</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Resultado y Consecuencia</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Se mantiene vigente el texto de 1980 con quórum de reforma rebajado a 4/7 para canalizar cambios institucionales por vía parlamentaria.</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Visual Highlight Banner -->
+<section class="px-gutter-mobile py-space-sm">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-highest p-space-md shadow-sm flex items-center gap-space-md">
+<div class="relative w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up photography of the historical Chilean Constitution document bound in dark blue leather with the republican national coat of arms embossed in gold foil on pristine archival parchment paper, warm cinematic museum lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARhUqFjLmr8omdq8W2GEoA9k3cl5mxp31FZgKr3OG6n6VqmYGBBCGl_PvBHvPELcFw2O32ra_Dr_CU9RXrPvYRlUy1w6j7sq2IZxItHVzlZhd2LIYmeSlBXtfHDT1T6uWZVtfSZzBmvwgqEvmrXS--MNI_csqLv9z1lKuMoPziQknDiWMzi8wboiSMvY7zZzCSq4okF6flP64Z4Yl2EjFVzwsOhWljURFDQCkqk6zF"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">¿Sabías qué?</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold mt-0.5">Artículo 19: Tu escudo diario</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Contiene los 26 numerales que aseguran desde tu libertad personal hasta el derecho a vivir en un medio ambiente libre de contaminación.</p>
+</div>
+</div>
+</section>
+<!-- Fundamental Rights & Guarantees (Didactic Cards) -->
+<section class="px-gutter-mobile py-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Catálogo Cívico</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Garantías Constitucionales Explicadas</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Los derechos fundamentales que protegen tu vida cotidiana y cómo ejercerlos de forma efectiva.</p>
+</div>
+<!-- Rights Cards Grid -->
+<div class="grid grid-cols-1 gap-space-sm" id="rights-container">
+<!-- Right: Salud -->
+<div class="right-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container text-on-surface-variant">Art. 19 Nº 9</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-space-sm">Derecho a la Protección de la Salud</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">El Estado tutela el libre e igualitario acceso a acciones de promoción, protección y recuperación de la salud.</p>
+<div class="mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-sm">
+<p class="font-label-sm text-label-sm text-primary font-bold uppercase">En palabras sencillas:</p>
+<p class="font-body-sm text-body-sm text-on-surface">Tienes la libertad de elegir afiliarte al sistema público (FONASA) o a instituciones privadas (ISAPRE).</p>
+</div>
+</div>
+<!-- Right: Educación -->
+<div class="right-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container text-on-surface-variant">Art. 19 Nº 10 y 11</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-space-sm">Educación y Libertad de Enseñanza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">La educación tiene por objeto el pleno desarrollo de la persona en las distintas etapas de su vida.</p>
+<div class="mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-sm">
+<p class="font-label-sm text-label-sm text-primary font-bold uppercase">En palabras sencillas:</p>
+<p class="font-body-sm text-body-sm text-on-surface">La enseñanza básica y media son gratuitas y obligatorias. Los padres tienen el derecho preferente de educar a sus hijos.</p>
+</div>
+</div>
+<!-- Right: Propiedad -->
+<div class="right-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container text-on-surface-variant">Art. 19 Nº 23 y 24</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-space-sm">Derecho de Propiedad</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Libertad para adquirir el dominio de toda clase de bienes corporales e incorporales.</p>
+<div class="mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-sm">
+<p class="font-label-sm text-label-sm text-primary font-bold uppercase">En palabras sencillas:</p>
+<p class="font-body-sm text-body-sm text-on-surface">Nadie puede ser privado de su propiedad excepto por ley de expropiación fundada en interés nacional, con indemnización previa y al contado.</p>
+</div>
+</div>
+<!-- Right: Libertad de Expresión -->
+<div class="right-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container text-on-surface-variant">Art. 19 Nº 12</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-space-sm">Libertad de Emitir Opinión</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">La libertad de opinar y la de informar, sin censura previa, en cualquier forma y por cualquier medio.</p>
+<div class="mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-sm">
+<p class="font-label-sm text-label-sm text-primary font-bold uppercase">En palabras sencillas:</p>
+<p class="font-body-sm text-body-sm text-on-surface">No existe censura previa estatal, pero debes responder legalmente ante eventuales calumnias o injurias cometidas.</p>
+</div>
+</div>
+<!-- Actionable Shield: Recurso de Protección -->
+<div class="right-card bg-primary-container rounded-xl p-space-md text-on-primary shadow-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container font-bold">Mecanismo Judicial de Urgencia</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2">El Recurso de Protección (Art. 20)</h3>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-1">Una acción constitucional rápida que cualquier ciudadano o representante puede presentar ante la Corte de Apelaciones respectiva cuando se vulnera arbitrariamente un derecho fundamental.</p>
+<div class="mt-space-sm grid grid-cols-2 gap-2 text-on-surface">
+<div class="bg-surface-container-lowest rounded-lg p-space-sm">
+<p class="font-label-sm text-label-sm text-secondary font-bold">¿Cuándo procede?</p>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">Ante actos u omisiones ilegales que priven o amenacen tus derechos esenciales.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm">
+<p class="font-label-sm text-label-sm text-primary font-bold">¿Requiere abogado?</p>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">No es obligatorio. Puedes interponerlo tú mismo por escrito formal o correo digital.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Constitutional Reform & Quorum Infographic -->
+<section class="px-gutter-mobile py-space-md flex flex-col gap-space-md bg-surface-container-low">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">how_to_reg</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Mecánica Democrática</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">¿Cómo se Cambia la Constitución?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conoce las reglas de juego y mayorías que permiten modificar el texto fundamental de Chile.</p>
+</div>
+<!-- 4/7 Quorum Infographic Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Quórum Único Vigente (Ley 21.481)</span>
+<span class="px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-high text-primary font-bold">4/7 Partes</span>
+</div>
+<!-- Visual Fraction Bar -->
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="w-full h-4 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full transition-all duration-700" style="width: 57.14%;"></div>
+</div>
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-bold text-primary">57,1% (4 de cada 7 parlamentarios)</span>
+<span>Mayoría requerida</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-2">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Cámara de Diputadas/os</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">89 de 155</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">Votos en ejercicio</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Senado de la República</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">29 de 50</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5">Votos en ejercicio</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        En agosto de 2022 se sustituyeron los antiguos supraquórums de 3/5 (60%) y 2/3 (66%), permitiendo que las reformas constitucionales sean más fluidas y accesibles al diálogo legislativo.
+      </p>
+</div>
+<!-- Constitutional Court Role -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">El Rol del Tribunal Constitucional (TC)</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Es el órgano colegiado encargado de velar porque ninguna ley aprobada por el Congreso o decreto del Presidente contradiga lo dispuesto en la Carta Magna.</p>
+<div class="mt-2 flex flex-col gap-2">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">fact_check</span>
+<p class="font-body-sm text-body-sm text-on-surface"><strong class="font-semibold">Control Preventivo:</strong> Revisa la constitucionalidad de leyes orgánicas antes de que sean promulgadas.</p>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">block</span>
+<p class="font-body-sm text-body-sm text-on-surface"><strong class="font-semibold">Inaplicabilidad por Inconstitucionalidad:</strong> Resuelve si una norma específica no debe aplicarse a un juicio particular por producir efectos injustos.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Constitutional Glossary Card for Ordinary Citizens -->
+<section class="px-gutter-mobile py-space-md flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">dictionary</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Glosario Cívico Rápido</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Toca para definir</span>
+</div>
+<div class="flex flex-col gap-2" id="glossary-accordion">
+<!-- Term 1 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden">
+<summary class="flex items-center justify-between p-space-md font-title-md text-title-md text-on-surface font-semibold cursor-pointer select-none">
+<span>Principio de Subsidiariedad</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-space-md pb-space-md pt-0 font-body-sm text-body-sm text-on-surface-variant">
+          Postula que el Estado no debe asumir funciones que los particulares, familias u organizaciones intermedias pueden desarrollar eficientemente por sí mismos, interviniendo únicamente cuando la iniciativa privada sea insuficiente o inexistente.
+        </div>
+</details>
+<!-- Term 2 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden">
+<summary class="flex items-center justify-between p-space-md font-title-md text-title-md text-on-surface font-semibold cursor-pointer select-none">
+<span>Poder Constituyente Originario</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-space-md pb-space-md pt-0 font-body-sm text-body-sm text-on-surface-variant">
+          Es la facultad soberana del pueblo para redactar una Constitución desde cero, fundando un nuevo orden legal y político sin estar atado a las restricciones de la Carta Fundamental anterior.
+        </div>
+</details>
+<!-- Term 3 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden">
+<summary class="flex items-center justify-between p-space-md font-title-md text-title-md text-on-surface font-semibold cursor-pointer select-none">
+<span>Estado de Excepción Constitucional</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-space-md pb-space-md pt-0 font-body-sm text-body-sm text-on-surface-variant">
+          Mecanismos extraordinarios previstos en la Constitución (Asamblea, Sitio, Catástrofe o Emergencia) que permiten al Presidente restringir temporalmente ciertas libertades fundamentales para proteger la seguridad nacional o afrontar calamidades públicas.
+        </div>
+</details>
+<!-- Term 4 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden">
+<summary class="flex items-center justify-between p-space-md font-title-md text-title-md text-on-surface font-semibold cursor-pointer select-none">
+<span>Habeas Corpus (Amparo)</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-space-md pb-space-md pt-0 font-body-sm text-body-sm text-on-surface-variant">
+          Garantía constitucional consagrada en el Artículo 21 que protege tu libertad personal y seguridad individual ante cualquier arresto, detención o amenaza arbitraria ejercida por la autoridad sin orden judicial competente.
+        </div>
+</details>
+</div>
+<!-- Civic micro-action card -->
+<div class="mt-space-sm p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Texto Oficial Vigente</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Biblioteca del Congreso Nacional (BCN)</span>
+</div>
+</div>
+<button class="px-3 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-on-primary-fixed-variant transition-colors" onclick="alert('Abriendo texto consolidado de la Constitución Política en el portal oficial de la Biblioteca del Congreso Nacional.')">
+        Consultar
+      </button>
+</div>
+</section>
+</div>
+<script>
+  (function initCivicInteractions() {
+    // Epoch Filtering and Accordion Toggles
+    const filterPills = document.querySelectorAll('.epoch-chip');
+    const epochCards = document.querySelectorAll('.epoch-card');
+    const searchInput = document.getElementById('const-search');
+    const clearSearchBtn = document.getElementById('clear-search');
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'active');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        pill.classList.add('bg-primary', 'text-on-primary', 'active');
+
+        const selectedEpoch = pill.getAttribute('data-epoch');
+        epochCards.forEach(card => {
+          if (selectedEpoch === 'all' || card.getAttribute('data-card-epoch') === selectedEpoch) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Expand / Collapse details within Epoch cards
+    epochCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const details = card.querySelector('.epoch-details');
+        const arrow = card.querySelector('.epoch-arrow');
+        if (details.classList.contains('hidden')) {
+          details.classList.remove('hidden');
+          arrow.classList.add('rotate-180');
+        } else {
+          details.classList.add('hidden');
+          arrow.classList.remove('rotate-180');
+        }
+      });
+    });
+
+    // Search filter across rights, cards, and glossary
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (query.length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+
+        const searchableElements = document.querySelectorAll('.epoch-card, .right-card, #glossary-accordion details');
+        searchableElements.forEach(el => {
+          const text = el.innerText.toLowerCase();
+          if (query === '' || text.includes(query)) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        });
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        searchInput.dispatchEvent(new Event('input'));
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_10px_rgba(13,28,47,0.06)]" data-active-classes="text-primary font-semibold"><div class="grid grid-cols-5 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span class="font-label-sm text-label-sm leading-tight text-center">Inicio</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="historia" href="#"><span class="material-symbols-outlined text-[22px]">timeline</span><span class="font-label-sm text-label-sm leading-tight text-center">Historia</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="constitucion" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm leading-tight text-center">Constitución</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="ley-facil" href="#"><span class="material-symbols-outlined text-[22px]">gavel</span><span class="font-label-sm text-label-sm leading-tight text-center">Ley Fácil</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="estado" href="#"><span class="material-symbols-outlined text-[22px]">hub</span><span class="font-label-sm text-label-sm leading-tight text-center">Estado</span></a></div></nav></body></html>
